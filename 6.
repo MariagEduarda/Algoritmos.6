@@ -1,0 +1,23 @@
+programa
+{
+	inclua biblioteca Util
+	
+	funcao inicio()
+	{
+		inteiro ini = 99
+		inteiro fim = 89
+
+		se(ini < fim ) {
+			escreva("crescente!\n\n")
+			para(inteiro i=ini; i <= fim; i++){
+				escreva(i, " ")
+			}
+		
+		}senao {
+			escreva("decrescente!\n\n")
+			para(inteiro i=ini; i >= fim; i--){
+				escreva(i, " ")
+			}
+		}
+	}
+}
