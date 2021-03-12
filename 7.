@@ -1,0 +1,12 @@
+programa {
+	funcao inicio() {
+	    inteiro nota
+	    nota = 11
+	    enquanto(nota <= -1 ou nota >= 11){
+		escreva("\n nos informe um valor 0 a 10 \t")
+		leia(nota)
+	    }
+	    se(nota >= 0 e nota <= 10){1
+	    }
+	}
+}
