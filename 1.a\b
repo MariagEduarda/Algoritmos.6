@@ -1,0 +1,21 @@
+programa
+{
+	
+	
+	funcao inicio()
+	{
+          /*a*/
+		inteiro contador = 1
+		inteiro limite = 20
+		enquanto(contador <= limite){
+			escreva(contador, "\n")
+			contador++
+		}
+		/*b*/
+		para(inteiro cont = 1; cont <= limite; cont++){ /*1 até 20*/
+			escreva(cont, "\n") //1
+		}
+		
+		
+	}
+}
