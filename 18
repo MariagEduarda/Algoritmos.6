@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, fatorial = 1
+
+		n = 8
+
+		escreva(n,"! = ")
+		para(inteiro i=n; i >= 1; i--){ 
+			fatorial = fatorial * i
+			escreva(i," * ")
+		}
+
+		escreva(fatorial)
+		
+	}
+}
