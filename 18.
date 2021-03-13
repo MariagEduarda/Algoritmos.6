@@ -1,0 +1,40 @@
+programa
+	{
+	
+		funcao inicio()
+		{
+			inteiro N, menorValor = 0, maiorValor = 0, soma = 0, numeroInformado
+			
+			escreva("quantos número você gostaria? ")
+			leia(N)
+	
+			para(inteiro i=1; i <= N; i++) { //1
+				
+				escreva("informe o número: ")
+				leia(numeroInformado)
+	
+				se(i == 1){
+					menorValor = numeroInformado
+					maiorValor = numeroInformado
+				}
+	
+				se(numeroInformado < menorValor) {
+					menorValor = numeroInformado
+				}
+	
+				se(numeroInformado > maiorValor) {
+					maiorValor = numeroInformado
+				}
+	
+				soma = soma + numeroInformado
+	
+			}
+	
+			escreva("o menor valor é: ", menorValor, "\n\n")
+			escreva("o maior valor é: ", maiorValor, "\n\n")
+			escreva("a soma dos valores digitados é: ", soma, "\n\n")
+			escreva("a soma do maior e menor valor é : ", menorValor + maiorValor, "\n\n")
+			
+			
+		}
+	}
