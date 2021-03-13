@@ -1,0 +1,52 @@
+programa {
+	funcao inicio() {
+	   
+        real paisA = 0
+        real paisB = 0
+        real porcentagemA = 0
+        real porcentagemB = 0
+        inteiro ano = 0
+        
+        escreva("Informe a população do país A: \n")
+        leia(paisA)
+        escreva("\nInforme a população do país B: \n")
+        leia(paisB)
+        escreva("\nInforme a taxa de crescimento anual do país A: \n")
+        leia(porcentagemA)
+        porcentagemA = porcentagemA * 0.1
+        escreva("\nInforme a taxa de crescimento anual do país B: \n")
+        leia(porcentagemB)
+        porcentagemB = porcentagemB * 0.1
+        
+        enquanto(paisA<=paisB e porcentagemA<=porcentagemB){
+            escreva("\nNão é possível obter um encontro do número das populações dessas cidades.\n")
+            escreva("Informe uma porcentagem menor para o país B: \n")
+            leia(porcentagemB)
+        }
+         enquanto(paisB<=paisA e porcentagemB<=porcentagemA){
+            escreva("\nNão é possível obter um encontro do número das populações dessas cidades.\n")
+            escreva("Informe uma porcentagem menor para o país A: \n")
+            leia(porcentagemA)
+         }    
+        
+        se(paisA<=paisB){
+            enquanto(paisA <= paisB){
+            paisA = paisA *porcentagemA + paisA
+            paisB = paisB *porcentagemB + paisB
+            ano++
+        }
+        escreva("\nSerão necessarios ", ano, " anos para a população da país A se iguale ou ultrapasse a população do país B.\n")
+        
+        
+        }senao{
+            enquanto(paisB <= paisA){
+            paisA = paisA *porcentagemA + paisA
+            paisB = paisB *porcentagemB + paisB
+            ano++
+        }
+        escreva("Serão necessarios ", ano, " anos para a população da país B se iguale ou ultrapasse a população do país A.\n")
+        }
+        
+		
+	}
+}
